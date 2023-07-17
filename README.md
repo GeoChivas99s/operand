@@ -11,6 +11,10 @@ SweetAlert  -> Toasts para confirmação ou erros
 Firebase  -> Banco de dados não relacional 
 
 
+## Descrição do Projecto 
+
+Criação de um crud de usuários, persistindo os dados no firestore
+
 #  Commits types
 Feat -> features  | 
 Chore -> Pequenas alterações | 
