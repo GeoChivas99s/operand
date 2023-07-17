@@ -28,8 +28,6 @@
 import { mapActions } from 'vuex'
 import BaseInput from '@/components/BaseInput.vue'
 import BaseButton from '@/components/BaseButton.vue'
-// import { required, email } from 'vuelidate/lib/validators'
-// import Swal from 'sweetalert2'
 
 export default {
   components: {
@@ -49,33 +47,15 @@ export default {
     }),
     async onSubmit () {
       this.isLoading = true
-      // this.$v.$touch()
-
-      // const Isinvalid = await this.$v.$invalid
-      // console.log(Isinvalid)
-      // if (Isinvalid) {
-      //   this.isLoading = false
-      //   return
-      // }
-
-      // const { user, error } = await this.login({ email: this.email, password: this.password })
       const t = await this.login({ email: this.email, password: this.password })
 
       if (t) {
         this.$router.push('/').catch(() => {})
       } else {
         this.isLoading = false
-        // eslint-disable-next-line no-undef
-        // Swal.fire('Usuário ou senha inválidos!', '', 'error')
       }
     }
   }
-  // validations () {
-  //   return {
-  //     email: { required, email },
-  //     password: { required }
-  //   }
-  // }
 }
 </script>
 <style lang="scss">
