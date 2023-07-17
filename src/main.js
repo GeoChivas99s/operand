@@ -4,10 +4,10 @@ import router from './router'
 import { store } from './store'
 import { auth } from '@/config/firebase'
 import { onAuthStateChanged } from 'firebase/auth'
-import Vuelidate from 'vuelidate'
+// import Vuelidate from 'vuelidate'
 import './plugins/fontawesome'
 
-Vue.use(Vuelidate)
+// Vue.use(Vuelidate)
 
 Vue.config.productionTip = false
 
