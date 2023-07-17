@@ -17,8 +17,8 @@
         <td>{{user.email}}</td>
         <td>{{user.birthDate}}</td>
         <td>
-          <font-awesome-icon @click="handleEditUser(user1)" class="edit" icon="pen-to-square" />
-          <font-awesome-icon v-if="user.email !== currentUser.email" class="delete" @click="handleDeleteUser(user1.id)" icon="trash" />
+          <font-awesome-icon @click="handleEditUser(user)" class="edit" icon="pen-to-square" />
+          <font-awesome-icon v-if="user.email !== currentUser.email" class="delete" @click="handleDeleteUser(user.id)" icon="trash" />
         </td>
       </tr>
     </table>
