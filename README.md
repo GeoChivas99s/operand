@@ -12,11 +12,10 @@ Firebase  -> Banco de dados não relacional
 
 
 #  Commits types
-Feat -> features
-Chore -> Pequenas alterações
-fix -> Resolução de bugs
-style -> adicç
-style -> adição ou correção de  estilos
+Feat -> features  | 
+Chore -> Pequenas alterações | 
+fix -> Resolução de bugs | 
+style -> adição ou correção de  estilos | 
 
 ## Project setup
 ```
